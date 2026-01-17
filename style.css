@@ -254,11 +254,11 @@ body {
 
 .sec-three {
   position: relative;
-  bottom: 3rem;
+  bottom: 2.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   margin: 0 auto;
 }
 .text-how {
@@ -354,7 +354,7 @@ body {
 
 .sec-four {
   position: relative;
-  top: 1rem;
+  top: 1.9rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -396,54 +396,48 @@ body {
 .glow-1 {
   top: -7%;
   left: -10%;
-    overflow: hidden;
-
+  overflow: hidden;
 }
 
 .glow-2 {
   top: 30%;
-  left: 70%;
+  left: 60%;
   overflow: hidden;
-   width: 120px;
+  width: 120px;
   height: 120px;
 }
 .glow-3 {
   top: 130%;
-  left: 70%;
-    overflow: hidden;
-       width: 120px;
+  left: 55%;
+  overflow: hidden;
+  width: 120px;
   height: 120px;
-
 }
 .glow-4 {
   top: 1%;
   left: -30%;
-    overflow: hidden;
-       width: 120px;
+  overflow: hidden;
+  width: 120px;
   height: 120px;
-
 }
 .glow-5 {
-  left: 70%;
-    overflow: hidden;
-       width: 120px;
+  left: 50%;
+  overflow: hidden;
+  width: 120px;
   height: 120px;
-
 }
 .glow-6 {
   left: 1%;
-    overflow: hidden;
-       width: 120px;
+  overflow: hidden;
+  width: 120px;
   height: 120px;
-
 }
 .glow-7 {
   top: 1%;
-  left: 70%;
-    overflow: hidden;
-       width: 120px;
-  height: 120px;
-
+  left: 60%;
+  overflow: hidden;
+  width: 110px;
+  height: 110px;
 }
 .play-icon {
   position: absolute;
