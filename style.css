@@ -254,7 +254,7 @@ body {
 
 .sec-three {
   position: relative;
-  top: 1rem;
+  bottom: 3rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -354,7 +354,7 @@ body {
 
 .sec-four {
   position: relative;
-  top: 9rem;
+  top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,14 +379,51 @@ body {
   margin-top: 1.4rem;
 }
 .sec-four .video div .video-content p {
-  width: 50%;
-  font-size: 1.3rem;
+  width: 40%;
+  font-size: 1rem;
+}
+.bg-glow {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: #761e88a9;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.7;
+  z-index: -2222;
+}
+.glow-1 {
+  top: -7%;
+  left: -10%;
+}
+
+.glow-2 {
+  top: 30%;
+  left: 70%;
+}
+.glow-3 {
+  top: 130%;
+  left: 120%;
+}
+.glow-4 {
+  top: 1%;
+  left: -30%;
+}
+.glow-5 {
+  left: 70%;
+}
+.glow-6 {
+  left: 1%;
+}
+.glow-7 {
+  top: 1%;
+  left: 70%;
 }
 .play-icon {
   position: absolute;
   top: 70%;
   right: 2rem;
-  transform: translateY(20%);
+  transform: translate(60%, 10%);
   width: 5vw;
   height: 5vh;
   min-width: 40px;
@@ -418,7 +455,7 @@ body {
 .footer {
   background: #090823;
   color: #fff;
-  padding: 5rem 1rem 2rem;
+  padding: 1rem 1rem 2rem;
   transform: translateY(15vw);
 }
 
@@ -431,7 +468,7 @@ body {
 }
 
 .footer-brand .logo {
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: linear-gradient(90deg, #f372f3, #ac9ef6, #64cef5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -486,6 +523,7 @@ body {
   align-items: center;
   justify-content: center;
   color: #fff;
+  text-decoration: none;
 }
 
 .social-icons a:hover {
@@ -833,7 +871,7 @@ body {
     background: #ffffffa8;
   }
   .sec-four {
-    transform: translateY(33vh);
+    transform: translateY(53vh);
   }
   .sec-four .video div .video-content p {
     width: 80%;
