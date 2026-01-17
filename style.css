@@ -27,7 +27,7 @@ body {
 /* nav links hidden on mobile */
 .nav-links {
   position: absolute;
-  top: 100%;
+  top: 1%;
   right: 0;
   width: 65vw;
   height: 100vh;
@@ -40,8 +40,10 @@ body {
 
 .nav-links li {
   text-align: center;
-  padding: 0.625rem 0;
-  margin-top: 2rem;
+  padding: 0.9rem 0;
+  position: relative;
+  top: 6rem;
+  margin: 1rem 0;
 }
 
 .nav-links a {
@@ -54,6 +56,7 @@ body {
 .menu-icon {
   font-size: 1.75rem;
   cursor: pointer;
+  z-index: 222222222;
 }
 
 /* active menu (JS) */
@@ -149,7 +152,8 @@ body {
 
 .btn.outline {
   border: 2px solid transparent;
-  background-image: linear-gradient(#0b0b0f, #0b0b0f),
+  background-image:
+    linear-gradient(#0b0b0f, #0b0b0f),
     linear-gradient(90deg, #ff4fd8, #9b5cff, #00c2ff);
   background-origin: border-box;
   background-clip: padding-box, border-box;
@@ -382,6 +386,46 @@ body {
   width: 40%;
   font-size: 1rem;
 }
+
+.play-icon {
+  position: absolute;
+  top: 70%;
+  right: 2rem;
+  transform: translate(60%, 10%);
+  width: 5vw;
+  height: 5vh;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 55px;
+  max-height: 55px;
+  background: #cfcfcfa8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.play-icon i {
+  color: #fff;
+  font-size: 1rem;
+  margin-left: 0;
+}
+
+.sec-four .video div img {
+  width: 70vw;
+}
+
+.video-2 {
+  margin-top: 1.5rem;
+}
+.footer {
+  background: #090823;
+  color: #fff;
+  padding: 1rem 1rem 2rem;
+  transform: translateY(15vw);
+}
 .bg-glow {
   position: absolute;
   width: 180px;
@@ -439,46 +483,6 @@ body {
   width: 110px;
   height: 110px;
 }
-.play-icon {
-  position: absolute;
-  top: 70%;
-  right: 2rem;
-  transform: translate(60%, 10%);
-  width: 5vw;
-  height: 5vh;
-  min-width: 40px;
-  min-height: 40px;
-  max-width: 55px;
-  max-height: 55px;
-  background: #cfcfcfa8;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.play-icon i {
-  color: #fff;
-  font-size: 1rem;
-  margin-left: 0;
-}
-
-.sec-four .video div img {
-  width: 70vw;
-}
-
-.video-2 {
-  margin-top: 1.5rem;
-}
-.footer {
-  background: #090823;
-  color: #fff;
-  padding: 1rem 1rem 2rem;
-  transform: translateY(15vw);
-}
-
 .footer-container {
   width: 90%;
   margin-inline: auto;
@@ -656,6 +660,10 @@ body {
     line-height: 1.2rem;
   }
 
+  .metaverse-section {
+    transform: translateY(-20vh);
+  }
+
   .grid {
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -674,10 +682,6 @@ body {
     font-size: 0.9rem;
   }
 
-  .metaverse-section {
-    transform: translateY(-20vh);
-  }
-
   .img-2 {
     transform: translate(-7vw, 10vh);
   }
@@ -686,13 +690,15 @@ body {
     margin-bottom: 4rem;
   }
 
+  .sec-three {
+    transform: translateY(-17vh);
+  }
   .cards {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
-  .sec-three {
-    transform: translateY(-17vh);
+  .sec-four {
+    top: 7rem;
   }
 
   .play-icon {
@@ -714,6 +720,53 @@ body {
     font-weight: 500;
     transform: translate(4vw, -8vh);
   }
+  .glow-1 {
+    top: -7%;
+    left: -10%;
+    overflow: hidden;
+  }
+
+  .glow-2 {
+    top: 30%;
+    left: 80%;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+  }
+  .glow-3 {
+    top: 190%;
+    left: -10%;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+  }
+  .glow-4 {
+    top: 1%;
+    left: 75%;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+  }
+  .glow-5 {
+    left: 80%;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+  }
+  .glow-6 {
+    left: 1%;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+  }
+  .glow-7 {
+    top: 50%;
+    left: 90%;
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+  }
+
   .footer-container {
     grid-template-columns: 1.5fr 1fr 1fr;
   }
@@ -739,11 +792,10 @@ body {
     flex-direction: row;
     gap: 2.5rem;
   }
-
-  .nav-links li {
-    margin-top: 1.3rem;
-  }
-
+/* nav links hidden on mobile */
+.nav-links li {
+  top: 0.1rem;
+}
   .nav-links a {
     font-size: 1rem;
     color: #ffffff;
@@ -836,6 +888,9 @@ body {
     color: #ffffffb7;
   }
 
+  .metaverse-section {
+    transform: translateY(-15vh);
+  }
   .grid {
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -856,10 +911,6 @@ body {
     color: #ffffffb7;
   }
 
-  .metaverse-section {
-    transform: translateY(-15vh);
-  }
-
   .img-2 {
     transform: translate(-4vw, 23vh);
   }
@@ -867,17 +918,36 @@ body {
     width: 90%;
     margin-bottom: 2rem;
   }
-
+   .sec-three {
+    transform: translateY(10vh);
+  }
   .cards {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 3rem;
   }
 
-  .sec-three {
-    transform: translateY(10vh);
-  }
+   .sec-four {
+    transform: translateY(53vh);
+        overflow: hidden;
 
+  }
+ .sec-four .video div .video-content p {
+    width: 80%;
+    font-size: 1.8rem;
+    font-weight: 400;
+    transform: translate(2vw, -10vh);
+  }
+.sec-four .video div img {
+    width: 66vw;
+  }
+  .video {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 2rem;
+    transform: translateX(20vw);
+  }
   .play-icon {
     top: 0;
     right: 31rem;
@@ -890,29 +960,54 @@ body {
     max-height: 60px;
     background: #ffffffa8;
   }
-  .sec-four {
-    transform: translateY(53vh);
-  }
-  .sec-four .video div .video-content p {
-    width: 80%;
-    font-size: 1.8rem;
-    font-weight: 400;
-    transform: translate(2vw, -10vh);
-  }
-  .sec-four {
+
+  .glow-1 {
+    top: -5%;
+    left: 5%;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
   }
-  .video {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    gap: 2rem;
-    transform: translateX(20vw);
+
+  .glow-2 {
+    top: 30%;
+    left: 90%;
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+  }
+  .glow-3 {
+    top: 190%;
+    left: 240%;
+    overflow: hidden;
+    width: 170px;
+    height: 170px;
+    display: none;
+  }
+  .glow-4 {
+    top: 50%;
+    left: 2%;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+  }
+  .glow-5 {
+    left: 80%;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+  }
+  .glow-6 {
+    top: 120%;
+    left: 1%;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+  }
+  .glow-7 {
+    display: none;
   }
 
-  .sec-four .video div img {
-    width: 66vw;
-  }
   .footer-container {
     grid-template-columns: 2fr 1fr 1fr 1.3fr;
     gap: 4rem;
@@ -922,6 +1017,7 @@ body {
   }
   .footer {
     transform: translateY(70vh);
+    padding: 4rem 1rem 2rem;
   }
 
   .footer .logo {
